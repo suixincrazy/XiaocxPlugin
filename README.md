@@ -9,5 +9,8 @@ XiaocxPlugin
 
 一个小程序运行插件可以让gpt帮你写一些简单的小功能py然后丢进QChatGPT\plugins\XiaocxPlugin\data\里就可以执行小程序，里面我已经丢了几个文件了
 只需要/py文件名比如 天气.py 你就/天气它就会执行这个小程序
+
+注意你只需把py丢进data里然后直接/py名字无需加.py后续 即可测试 完全不用重启主程序
+
 ![Image text](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/1.png)
 ![Image text](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/QQ%E6%88%AA%E5%9B%BE20241026000430.png)
