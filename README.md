@@ -16,6 +16,12 @@
 
 小程序开发及其简单，把你需要的功能告诉gpt然后把我的案例程序代码给GPT，GPT生成后丢到data目录下即可，目前还在更新测试
 
-使用方法：未编辑
+使用方法：
 
+位置图
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E4%BD%8D%E7%BD%AE.png)
 
+插件图
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E8%89%B2%E5%9B%BE.png)
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E5%A4%A9%E6%B0%94.png)
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E5%A4%9A%E4%B8%AA.png)
