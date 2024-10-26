@@ -1,16 +1,21 @@
+# Md2QQImage
+
+## 安装
+
+配置完成 [QChatGPT](https://github.com/RockChinQ/QChatGPT) 主程序后使用管理员账号向机器人发送命令即可安装：
+
+```
+!plugin get https://github.com/sanxianxiaohuntun/XiaocxPlugin.git
+```
+或查看详细的[插件安装说明](https://github.com/RockChinQ/QChatGPT/wiki/5-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)
+
+## 使用
 
 
-XiaocxPlugin
-配置完成 QChatGPT 主程序后使用管理员账号向机器人发送命令即可安装：
+这只是一个加载程序内部包含一些案例，可以让用户自主添加小程序，比如/天气 /色图 /今日运势 之类的各种小功能
 
-命令 !plugin https://github.com/sanxianxiaohuntun/XiaocxPlugin/
+小程序开发及其简单，把你需要的功能告诉gpt然后把我的案例程序代码给GPT，GPT生成后丢到data目录下即可，目前还在更新测试
 
-一个QChatGPT的小插件
+使用方法：未编辑
 
-一个小程序运行插件可以让gpt帮你写一些简单的小功能py然后丢进QChatGPT\plugins\XiaocxPlugin\data\里就可以执行小程序，里面我已经丢了几个文件了
-只需要/py文件名比如 天气.py 你就/天气它就会执行这个小程序
 
-注意你只需把py丢进data里然后直接/py名字无需加.py后续 即可测试 完全不用重启主程序
-
-![Image text](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/1.png)
-![Image text](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/QQ%E6%88%AA%E5%9B%BE20241026000430.png)
