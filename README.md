@@ -17,6 +17,12 @@
 小程序开发及其简单，把你需要的功能告诉gpt然后把我的案例程序代码给GPT，GPT生成后丢到data目录下即可，目前还在更新测试
 
 使用方法：
+1.用GPT或者自己写又或者下载的py小程序（只支持图片和文本类）
+2.放到QChatGPT\plugins\XiaocxPlugin\data
+3.使用/命令启用小插件（放进去后无需重启主程序）比如你放入了文件叫做"色图.py"，你就使用"/色图"命令即可使用，如果要增加小程序安装data目录下文件逻辑写即可
+4.文件类型（一律参考data目录下文件） /命令 xxxx类型文件可参考"天气.py"，图片类型参考"色图.py"
+5./命令如果冲突可以修改QChatGPT\plugins\XiaocxPlugin目录下main.py的"if cleaned_text.startswith('/'):"位置"/"修改为你想要的即可比如：/改为AAA，"if cleaned_text.startswith('AAA')"
+
 
 位置图
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E4%BD%8D%E7%BD%AE.png)
@@ -25,3 +31,7 @@
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E8%89%B2%E5%9B%BE.png)
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E5%A4%A9%E6%B0%94.png)
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E5%A4%9A%E4%B8%AA.png)
+
+## 小白专用GPT生成教程
+
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E6%95%99%E5%AD%A6.jpg)
