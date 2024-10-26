@@ -24,11 +24,11 @@ json色图是非跳转式的随机色图采用json格式返回的参考代码模
 ## 使用方法：
 1.用GPT或者自己写又或者下载的py小程序（只支持图片和文本类）<br />
 &nbsp;<br />
-2.放到QChatGPT\plugins\XiaocxPlugin\data<br />
+2.放到QChatGPT\plugins\XiaocxPlugin\data（该目录以后都简称data目录）<br />
 &nbsp;<br />
-3.使用/命令启用小插件（放进去后无需重启主程序）比如你放入了文件叫做"色图.py"，你就使用"/色图"命令即可使用，如果要增加小程序安装data目录下文件逻辑写即可<br />
+3.使用/命令启用小插件（放进去后无需重启主程序）比如你放入了文件叫做"色图.py"，你就使用"/色图"命令即可使用，如果要增加小程序把"xxx.py"文件放到插件data目录下文件逻辑写即可，不知道在哪可以看位置图以及上一条<br />
 &nbsp;<br />
-4.文件类型（一律参考data目录下文件） /命令 xxxx类型文件可参考"天气.py"，图片类型参考"色图.py"<br />
+4.文件类型（可以参考data目录下文件） /命令 xxxx类型文件可参考"天气.py"，图片类型参考"色图.py"<br />
 &nbsp;<br />
 5./命令如果冲突可以修改QChatGPT\plugins\XiaocxPlugin目录下main.py的"if cleaned_text.startswith('/'):"位置"/"修改为你想要的即可比如：/改为AAA，"if cleaned_text.startswith('AAA')"<br />
 &nbsp;<br />
