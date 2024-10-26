@@ -8,13 +8,19 @@
 ```
 或查看详细的[插件安装说明](https://github.com/RockChinQ/QChatGPT/wiki/5-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)
 
+## 注意
+&nbsp;<br />
+json色图是非跳转式的随机色图采用json格式返回的
+&nbsp;<br />
+## 注意真色图是真的返回R18请注意！！！
+&nbsp;<br />
 ## 使用
 
-&nbsp;
+&nbsp;<br />
 这只是一个加载程序内部包含一些案例，可以让用户自主添加小程序，比如/天气 /色图 /今日运势 之类的各种小功能<br />
-&nbsp;
+&nbsp;<br />
 小程序开发及其简单，把你需要的功能告诉gpt然后把我的案例程序代码给GPT，GPT生成后丢到data目录下即可，目前还在更新测试<br />
-&nbsp;
+&nbsp;<br />
 ## 使用方法：
 1.用GPT或者自己写又或者下载的py小程序（只支持图片和文本类）<br />
 &nbsp;<br />
