@@ -3,41 +3,17 @@ from pkg.plugin.events import PersonNormalMessageReceived, GroupNormalMessageRec
 import subprocess
 import os
 import re
-import shutil
 from mirai import Image, Plain
 
 # 注册插件
 @register(name="小程序运行插件", description="一个小插件运行插件不必开关程序直接运行程序简单（可以用gpt直接写功能添加）", version="0.1", author="小馄饨")
 class CommandExecutorPlugin(BasePlugin):
 
+    # 插件加载时触发
     def __init__(self, host: APIHost):
+        self.data_dir = os.path.join(os.path.dirname(__file__), 'data')  # 数据目录路径
         self.image_pattern = re.compile(r'!\[.*?\]\((https?://\S+)\)')  # 匹配图片 URL 的正则表达式
         self.at_pattern = re.compile(r'@\S+\s*')  # 匹配@提及及其后空格
-
-        # 设置源和目标目录
-        base_path = os.getenv('QCHATGPT_PATH')  # 从环境变量获取路径
-        if not base_path:
-            raise ValueError("请设置环境变量 'QCHATGPT_PATH'")
-
-        self.source_data_dir = os.path.join(base_path, 'plugins', 'XiaocxPlugin', 'data')  # 源数据目录
-        self.target_data_dir = os.path.join(base_path, 'data', 'pluginsXiaocxPlugin', 'data')  # 目标数据目录
-
-        # 检查并创建目标目录
-        if not os.path.exists(self.target_data_dir):
-            os.makedirs(self.target_data_dir)  # 创建目标目录
-        
-        # 复制文件
-        self.copy_files()
-
-    def copy_files(self):
-        # 复制源目录中的所有文件到目标目录
-        for item in os.listdir(self.source_data_dir):
-            source = os.path.join(self.source_data_dir, item)
-            target = os.path.join(self.target_data_dir, item)
-            if os.path.isfile(source):
-                shutil.copy2(source, target)  # 复制文件
-            elif os.path.isdir(source):
-                shutil.copytree(source, target, dirs_exist_ok=True)  # 复制目录
 
     # 当收到个人消息时触发
     @handler(PersonNormalMessageReceived)
@@ -64,7 +40,7 @@ class CommandExecutorPlugin(BasePlugin):
                 ctx.prevent_default()
                 return
 
-            script_path = os.path.join(self.target_data_dir, f"{command}.py")
+            script_path = os.path.join(self.data_dir, f"{command}.py")
 
             if os.path.exists(script_path):
                 try:
