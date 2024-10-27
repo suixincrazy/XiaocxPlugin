@@ -7,8 +7,12 @@
 !plugin get https://github.com/sanxianxiaohuntun/XiaocxPlugin.git
 ```
 或查看详细的[插件安装说明](https://github.com/RockChinQ/QChatGPT/wiki/5-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)
-
-## 注意
+## 目前集成<br />
+&nbsp;<br />
+/看妹妹（返回cos妹妹图）/看腿 (返回腿照) /色图 (返回有点色的图) /真色图 (返回真的色图) /表情包 (返回二次元表情包) <br />
+/毒鸡汤 (返回毒鸡汤) /励志英语 (返回励志英语) /骚话 (返回骚话) /天气 XXXX (返回XXXX天气比如/天气 北京 返回天气北京)/舔狗日记 （随机生成舔狗日记）
+&nbsp;<br />
+## 注意<br />
 &nbsp;<br />
 json色图是非跳转式的随机色图采用json格式返回的参考代码模式
 &nbsp;<br />
