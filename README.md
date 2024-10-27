@@ -36,7 +36,7 @@ json色图是非跳转式的随机色图采用json格式返回的参考代码模
 &nbsp;<br />
 4.文件类型（可以参考data目录下文件） /命令 xxxx类型文件可参考"天气.py"，图片类型参考"色图.py"<br />
 &nbsp;<br />
-5./命令如果冲突可以修改QChatGPT\plugins\XiaocxPlugin目录下main.py的"if cleaned_text.startswith('/'):"位置"/"修改为你想要的即可比如：/改为AAA，"if cleaned_text.startswith('AAA')"<br />
+5.如果"/"命令冲突可以修改QChatGPT\plugins\XiaocxPlugin目录下main.py的"if cleaned_text.startswith('/'):"位置"/"修改为你想要的即可比如：/改为AAA，"if cleaned_text.startswith('AAA')"<br />
 &nbsp;<br />
 &nbsp;<br />
 ## 位置图
