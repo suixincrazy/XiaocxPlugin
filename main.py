@@ -40,17 +40,24 @@ class CommandExecutorPlugin(BasePlugin):
             if os.path.exists(script_path):
                 try:
                     result = subprocess.check_output(['python', script_path, args], text=True)
-                    image_urls = self.extract_image_urls(result)
-                    if image_urls:
-                        for image_url in image_urls:
-                            ctx.add_return("reply", [Image(url=image_url)])
-                    else:
-                        ctx.add_return("reply", ["没有找到图片。"])
+                    messages = self.convert_message(result)
+                    ctx.add_return("reply", messages)
                 except subprocess.CalledProcessError as e:
                     ctx.add_return("reply", [f"执行失败: {e.output}"])
             else:
                 ctx.add_return("reply", ["脚本不存在，请检查命令。"])
             ctx.prevent_default()
 
-    def extract_image_urls(self, message):
-        return [match.group(1) for match in self.image_pattern.finditer(message)]
+    def convert_message(self, message):
+        parts = []
+        last_end = 0
+        for match in self.image_pattern.finditer(message):
+            start, end = match.span()
+            if start > last_end:
+                parts.append(Plain(message[last_end:start]))
+            image_url = match.group(1)
+            parts.append(Image(url=image_url))
+            last_end = end
+        if last_end < len(message):
+            parts.append(Plain(message[last_end:]))
+        return parts if parts else [Plain(message)]
