@@ -10,8 +10,23 @@
 ## 目前集成<br />
 &nbsp;<br />
 /看妹妹（返回cos妹妹图）/看腿 (返回腿照) /色图 (返回有点色的图) /真色图 (返回真的色图) /表情包 (返回二次元表情包) <br />
-/毒鸡汤 (返回毒鸡汤) /励志英语 (返回励志英语) /骚话 (返回骚话) /天气 XXXX (返回XXXX天气比如/天气 北京 返回天气北京)/舔狗日记 （随机生成舔狗日记）
+/毒鸡汤 (返回毒鸡汤) /励志英语 (返回励志英语) /骚话 (返回骚话) /天气 XXXX (返回XXXX天气比如/天气 北京 返回天气北京)<br />
+/舔狗日记 （随机生成舔狗日记）/画图(AI绘图)
 &nbsp;<br />
+<br />
+## AI绘图<br />
+调用dall-e-3进行绘图（其他太慢了），需要自己拿api和api地址（百度或者自己想办法，买也行）<br />
+命令"/画图DALL·E-3 你想要的内容"比如"/画图DALL·E-3 一只可爱的猫娘"，觉得命令长的可以仔细阅读如何修改。<br />
+&nbsp;<br />
+&nbsp;<br />
+效果图
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E7%BB%98%E5%9B%BE%E6%8F%92%E4%BB%B6.png)<br />
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E7%BB%98%E5%9B%BE%E6%8F%92%E4%BB%B62.png)<br />
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E7%BB%98%E5%9B%BE1.png)<br />
+![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E7%BB%98%E5%9B%BE.png)<br />
+ 
+
+
 ## 注意<br />
 &nbsp;<br />
 json色图是非跳转式的随机色图采用json格式返回的参考代码模式
