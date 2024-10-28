@@ -1,5 +1,9 @@
 # XiaocxPlugin
 
+更新日志0.1
+
+更新了主程序画图命令多次执行不会排队的bug，现在插件每次执行一个请求，执行完成后才会执行下一个。
+
 ## 安装
 配置完成 [QChatGPT](https://github.com/RockChinQ/QChatGPT) 主程序后使用管理员账号向机器人发送命令即可安装：<br />
 
