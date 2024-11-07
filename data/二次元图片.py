@@ -1,5 +1,5 @@
 import requests
-
+#Microsoft copilot提交的插件
 def get_anime_image_url():
     api_url = "https://api.vvhan.com/api/wallpaper/acg?type=json"
 
