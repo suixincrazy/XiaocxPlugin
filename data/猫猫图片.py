@@ -1,5 +1,5 @@
 import requests
-
+#Microsoft copilot提交的插件
 def get_cat_image_url():
     api_url = "https://api.thecatapi.com/v1/images/search?limit=1"
 
