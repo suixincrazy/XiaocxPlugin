@@ -1,9 +1,8 @@
 # XiaocxPlugin
 
-更新日志0.1
+更新日志0.2
 
-更新了主程序画图命令多次执行不会排队的bug，现在插件每次执行一个请求等2秒继续执行下一个。<br />
-更新了主程序的注解，现在全部都有注解了。
+更新了文档对部分小插件的使用讲解和图片示例
 
 ## 安装
 配置完成 [QChatGPT](https://github.com/RockChinQ/QChatGPT) 主程序后使用管理员账号向机器人发送命令即可安装：<br />
@@ -85,6 +84,10 @@ json色图是非跳转式的随机色图采用json格式返回的参考代码模
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E8%89%B2%E5%9B%BE.png)
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E5%A4%A9%E6%B0%94.png)
 ![before](https://raw.githubusercontent.com/sanxianxiaohuntun/wodecuntu12/refs/heads/main/%E5%A4%9A%E4%B8%AA.png)
+![SharedScreenshot3](https://github.com/user-attachments/assets/76d28092-253a-4e4d-8393-50b10d1f51cf)
+![SharedScreenshot2](https://github.com/user-attachments/assets/4bfa4079-7d5d-406e-b02f-7363dfe908a8)
+![SharedScreenshot](https://github.com/user-attachments/assets/94ebb7ee-55a3-4610-8be6-aee5c2bd3f63)
+
 
 ## 小白专用GPT自制插件生成教程
 
