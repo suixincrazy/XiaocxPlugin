@@ -37,11 +37,6 @@ class CommandExecutorPlugin(BasePlugin):
                 command = parts[0]
                 args = parts[1] if len(parts) > 1 else ''
 
-                if command == "测试":  # 特殊测试命令
-                    ctx.add_return("reply", ["插件测试成功！"])
-                    ctx.prevent_default()
-                    return
-
                 script_path = os.path.join(os.path.dirname(__file__), 'data', f"{command}.py")
 
                 if os.path.exists(script_path):  # 检查脚本是否存在
@@ -53,9 +48,9 @@ class CommandExecutorPlugin(BasePlugin):
                         ctx.add_return("reply", [f"执行失败: {e.output}"])  # 返回错误消息
                     except Exception as e:  # 捕获其他异常
                         ctx.add_return("reply", [f"发生错误: {str(e)}"])  # 返回通用错误消息
+                    ctx.prevent_default()  # 防止后续处理
                 else:
                     ctx.add_return("reply", ["脚本不存在，请检查命令。"])  # 返回脚本不存在的消息
-                ctx.prevent_default()  # 防止后续处理
 
     def convert_message(self, message):
         parts = []
