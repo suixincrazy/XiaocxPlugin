@@ -49,8 +49,7 @@ class CommandExecutorPlugin(BasePlugin):
                     except Exception as e:  # 捕获其他异常
                         ctx.add_return("reply", [f"发生错误: {str(e)}"])  # 返回通用错误消息
                     ctx.prevent_default()  # 防止后续处理
-                else:
-                    ctx.add_return("reply", ["脚本不存在，请检查命令。"])  # 返回脚本不存在的消息
+                # else 分支已删除
 
     def convert_message(self, message):
         parts = []
